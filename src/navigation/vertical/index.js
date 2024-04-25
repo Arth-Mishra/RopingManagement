@@ -45,7 +45,7 @@ const navigation = () => {
     {
       title: 'Enter Times',
       icon: Login,
-      path: '/pages/error',
+      path: '/enterTimes',
       // openInNewTab: true
     },
     {
