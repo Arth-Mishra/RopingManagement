@@ -13,64 +13,66 @@ import GoogleCirclesExtended from 'mdi-material-ui/GoogleCirclesExtended'
 const navigation = () => {
   return [
     {
-      title: 'Dashboard',
+      title: 'Production information',
       icon: HomeOutline,
       path: '/'
     },
+    // {
+    //   title: 'Account Settings',
+    //   icon: AccountCogOutline,
+    //   path: '/account-settings'
+    // },
     {
-      title: 'Account Settings',
-      icon: AccountCogOutline,
-      path: '/account-settings'
+      sectionTitle: 'ROPING'
     },
+    // {
+    //   title: 'Roping Information',
+    //   icon: AlertCircleOutline,
+    //   path: '/pages/login',
+    //   openInNewTab: true
+    // },
     {
-      sectionTitle: 'Pages'
-    },
-    {
-      title: 'Login',
-      icon: Login,
-      path: '/pages/login',
-      openInNewTab: true
-    },
-    {
-      title: 'Register',
-      icon: AccountPlusOutline,
-      path: '/pages/register',
-      openInNewTab: true
-    },
-    {
-      title: 'Error',
+      title: 'Roping Information',
       icon: AlertCircleOutline,
-      path: '/pages/error',
-      openInNewTab: true
+      path: '/Roping'
     },
     {
-      sectionTitle: 'User Interface'
-    },
-    {
-      title: 'Typography',
+      title: 'Enter Roping',
       icon: FormatLetterCase,
-      path: '/typography'
+      path: '/EnterRoping',
+      // openInNewTab: true
     },
     {
-      title: 'Icons',
-      path: '/icons',
-      icon: GoogleCirclesExtended
+      title: 'Enter Times',
+      icon: Login,
+      path: '/pages/error',
+      // openInNewTab: true
     },
     {
-      title: 'Cards',
-      icon: CreditCardOutline,
-      path: '/cards'
-    },
-    {
-      title: 'Tables',
-      icon: Table,
-      path: '/tables'
-    },
-    {
+      title: 'Contestant Information',
       icon: CubeOutline,
-      title: 'Form Layouts',
-      path: '/form-layouts'
+      path: '/contestant_information'
+    },
+    {
+      title: 'Tools & Reports',
+      path: '/reports',
+      icon: GoogleCirclesExtended
     }
+    // {
+    //   title: 'Cards',
+    //   icon: CreditCardOutline,
+    //   path: '/cards'
+    // },
+    // {
+    //   title: 'Tables',
+    //   icon: Table,
+    //   path: '/tables'
+    // },
+    // {
+    //   icon: CubeOutline,
+    //   title: 'Form Layouts',
+    //   path: '/form-layouts'
+    // }
   ]
 }
 

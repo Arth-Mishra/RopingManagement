@@ -13,6 +13,7 @@ import Magnify from 'mdi-material-ui/Magnify'
 import ModeToggler from 'src/@core/layouts/components/shared-components/ModeToggler'
 import UserDropdown from 'src/@core/layouts/components/shared-components/UserDropdown'
 import NotificationDropdown from 'src/@core/layouts/components/shared-components/NotificationDropdown'
+import { Typography } from '@mui/material'
 
 const AppBarContent = props => {
   // ** Props
@@ -33,7 +34,10 @@ const AppBarContent = props => {
             <Menu />
           </IconButton>
         ) : null}
-        <TextField
+        <Typography variant='body2' sx={{ fontWeight: 600, marginTop:"10px", fontSize:"18px" }}>
+                Selected Production: none
+        </Typography>
+        {/* <TextField
           size='small'
           sx={{ '& .MuiOutlinedInput-root': { borderRadius: 4 } }}
           InputProps={{
@@ -43,7 +47,7 @@ const AppBarContent = props => {
               </InputAdornment>
             )
           }}
-        />
+        /> */}
       </Box>
       <Box className='actions-right' sx={{ display: 'flex', alignItems: 'center' }}>
         {/* {hiddenSm ? null : (
@@ -62,7 +66,7 @@ const AppBarContent = props => {
           </Box>
         )} */}
         <ModeToggler settings={settings} saveSettings={saveSettings} />
-        <NotificationDropdown />
+        {/* <NotificationDropdown /> */}
         <UserDropdown />
       </Box>
     </Box>
